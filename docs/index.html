@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sapling — Read faster, think deeper</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --green:      #3a7d44;
+      --green-light:#f0f7f1;
+      --text:       #1a1a1a;
+      --muted:      #5a6a5c;
+      --border:     #dde8de;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--text);
+      background: #fff;
+      line-height: 1.6;
+    }
+
+    /* ── Header ── */
+    header {
+      background: var(--green);
+      color: #fff;
+      text-align: center;
+      padding: 72px 24px 64px;
+    }
+
+    header .icon {
+      font-size: 56px;
+      line-height: 1;
+      margin-bottom: 20px;
+    }
+
+    header h1 {
+      font-size: 2.6rem;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+    }
+
+    header p {
+      margin-top: 12px;
+      font-size: 1.15rem;
+      opacity: 0.88;
+    }
+
+    /* ── Sections ── */
+    section {
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 56px 24px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    section:last-of-type { border-bottom: none; }
+
+    section h2 {
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: var(--green);
+      margin-bottom: 16px;
+    }
+
+    section p {
+      color: var(--muted);
+      margin-bottom: 12px;
+    }
+
+    /* ── Features ── */
+    .features {
+      list-style: none;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      margin-top: 8px;
+    }
+
+    .features li {
+      background: var(--green-light);
+      border-radius: 10px;
+      padding: 16px 18px;
+      color: var(--text);
+      font-size: 0.95rem;
+    }
+
+    .features li span {
+      display: block;
+      font-size: 1.4rem;
+      margin-bottom: 6px;
+    }
+
+    @media (max-width: 480px) {
+      .features { grid-template-columns: 1fr; }
+    }
+
+    /* ── Contact ── */
+    .contact-link {
+      display: inline-block;
+      margin-top: 8px;
+      color: var(--green);
+      font-weight: 600;
+      text-decoration: none;
+      border-bottom: 2px solid var(--border);
+      padding-bottom: 2px;
+      transition: border-color 0.15s;
+    }
+
+    .contact-link:hover { border-color: var(--green); }
+
+    /* ── Footer ── */
+    footer {
+      text-align: center;
+      padding: 32px 24px;
+      font-size: 0.85rem;
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="icon">🌿</div>
+    <h1>Sapling</h1>
+    <p>Read faster, think deeper.</p>
+  </header>
+
+  <section>
+    <h2>About</h2>
+    <p>Sapling is a native iOS speed reading app that helps you get through books faster without losing comprehension. Import your own PDFs, EPUBs, or plain text files and read at your own pace.</p>
+  </section>
+
+  <section>
+    <h2>Features</h2>
+    <ul class="features">
+      <li><span>⚡</span>RSVP speed reading with word-by-word display</li>
+      <li><span>📖</span>Scrolling reader with text highlighting</li>
+      <li><span>🔊</span>Text-to-speech with lookahead buffering</li>
+      <li><span>📄</span>Supports PDF, EPUB, and plain text</li>
+      <li><span>🔖</span>Per-page bookmarks and reading progress</li>
+      <li><span>🎨</span>Themes, fonts, and WPM presets</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Support</h2>
+    <p>Have a question or ran into an issue? Reach out by email and I'll get back to you as soon as possible.</p>
+    <a class="contact-link" href="mailto:jelle.vaneyck@gmail.com">jelle.vaneyck@gmail.com</a>
+    <p style="margin-top: 20px;">You can also <a class="contact-link" href="https://github.com/JelleVE/Sapling-public/issues">file a bug report</a> on GitHub.</p>
+  </section>
+
+  <section>
+    <h2>Privacy Policy</h2>
+    <p>Sapling does not collect, store, or share any personal data. All your documents and reading progress stay on your device.</p>
+  </section>
+
+  <footer>
+    &copy; 2026 Jelle Van Eyck &mdash; Sapling for iOS
+  </footer>
+
+</body>
+</html>
